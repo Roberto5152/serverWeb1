@@ -1,12 +1,14 @@
 
 //alert('Hola mundo');
+
+/*
 document.getElementById('sensor1').innerHTML='valor 1';
 
 function inicio() {
-  document.getElementById('sensor2').innerHTML='valor 2';
-
+  document.getElementById('sensor2').innerHTML='valor 2'
 }
-/*
+
+
 function LED1_On() {
   console.log("led on");
   document.getElementById('estado').innerHTML='Prendido';

@@ -20,20 +20,17 @@
 <title>EMBEBIDOS</title>
 </head>
 
-<body onload='inicio()'>
+
 
 <center>
 	<h1 id="tituto" style="color: white;">Servidor de Embebidos</h1>
 	<img id="imagen" style="border-radius: 35px; height: 50vh" src="https://www.lavanguardia.com/files/image_449_220/uploads/2018/03/19/5fa436c7233b0.jpeg" alt="user" >
 </center>
 
-<h1 style="color: white;">Sensor 1:</h>
-	<h id="sensor1" style="color: white;" >-_-</h1>
-<h1 style="color: white;">Sensor 2:</h>
-	<h id="sensor2" style="color: white;">-_-</h1>
+
 <h1 style="color: white;">Mensaje:</h>
 	<input type="text" id="enviarmensaje" name="enviarmensaje"></h1>
-<h1 style="color: white;">Recibido:</h>
+<h1 style="color: white;">Sensor: </h>
 	<h id="recibido" style="color: white;" ></h1>
 <h1 style="color: white;">LED: </h>
 	<h id="estado" style="color: white;">Apagado</h1>
@@ -53,76 +50,12 @@
 
 <script>
 /*
-function nuevo() {
-	
-	console.log("Mensaje");
-	var texto = document.getElementById('enviarmensaje').value;
-	message = new Paho.MQTT.Message(texto);
-    message.destinationName = "carloscalderon_@hotmail.es/t2";
-    client.send(message);
-}
+<body onload='inicio()'>
 
-
-function LED1_On() {
-	//alert("led on");
-	console.log("led on");
-	message = new Paho.MQTT.Message("ON");
-    message.destinationName = "carloscalderon_@hotmail.es/t2";
-    client.send(message);
-  
-}
-function LED1_Off(){
-	//alert("led off");
-	console.log("led off");
-	message = new Paho.MQTT.Message("OFF");
-    message.destinationName = "carloscalderon_@hotmail.es/t2";
-    client.send(message);
-}
-
-client = new Paho.MQTT.Client("maqiatto.com", 8883, "web_" + parseInt(Math.random() * 100, 10));
-
-  // set callback handlers
-  //client.onConnectionLost = onConnectionLost;
-  //client.onMessageArrived = onMessageArrived;
-  var options = {
-   useSSL: false,
-    userName: "carloscalderon_@hotmail.es",
-    password: "roberto51",
-    onSuccess:onConnect,
-    onFailure:doFail
-  }
-
-  // connect the client
-  client.connect(options);
-
-  // called when the client connects
-  function onConnect() {
-    // Once a connection has been made, make a subscription and send a message.
-    console.log("Conectado...");
-    client.subscribe("carloscalderon_@hotmail.es/t1");
-    message = new Paho.MQTT.Message("hola desde la web");
-    message.destinationName = "carloscalderon_@hotmail.es/t2";
-    client.send(message);
-	
-  }
-
-  function doFail(e){
-    console.log(e);
-  }
- */
-/*
-  // called when the client loses its connection
-  function onConnectionLost(responseObject) {
-    if (responseObject.errorCode !== 0) {
-      console.log("onConnectionLost:"+responseObject.errorMessage);
-    }
-  }
-
-  // called when a message arrives
-  function onMessageArrived(message) {
-    console.log("onMessageArrived:"+message.payloadString);
-	  document.getElementById("sensor").innerHTML=message.payloadString;
-  }
+<h1 style="color: white;">Sensor 1:</h>
+	<h id="sensor1" style="color: white;" >-_-</h1>
+<h1 style="color: white;">Sensor 2:</h>
+	<h id="sensor2" style="color: white;">-_-</h1>
 */
 </script>
 </body>
