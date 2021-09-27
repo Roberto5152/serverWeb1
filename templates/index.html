@@ -11,9 +11,6 @@
   		background-repeat:no-repeat;
   		background-position: center;
 	}
-	button{
-		width: 10%;
-	}
 }
 </style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js" type="text/javascript"></script>
@@ -22,27 +19,23 @@
 </head>
 
 <center>
-	<h1  style="color: white;">Proyecto de Sistemas Embebidos</h1>
-	<h1  style="color: white;">Grupo N°5</h1>
+	<h1  style="color: white;">Sistemas Embebidos</h1>
+	<h1  style="color: white;">Roberto C. Calderon G.</h1>
 	<img id="imagen" style="border-radius: 35px; height: 50vh" src="https://indiehoy.com/wp-content/uploads/2018/03/stewie-padre-de-familia.jpg" alt="user" >
+	<h1 style="color: white;">Monitoreo de dos Sensores</h>
 </center>
+
 
 <h1 style="color: white;">Conexion:</h>
 	<h id="recibido" style="color: white;" > Conectando....</h1>
 <h1 style="color: white;">Sensor 1: </h>
-	<h id="sensor" style="color: white;"></h1>
+	<h id="sensor1" style="color: white;"></h1>
 <h1 style="color: white;">Sensor 2: </h>
 	<h id="sensor2" style="color: white;"></h1>
 <center>
-	<h1 style="background: black; color: white;">Mensaje recibido desde la tarjeta ESP32: </h>
+	<h1 style="background: purple; color: white;">Estado de ambos sensores: </h>
 	<h id="Actual" style="color: white;" ></h1>
 </center>
-
-<h1 style="color: white;">• Baloa Nazareth</h1>
-<h1 style="color: white;">• Calderon Roberto</h1>
-<h1 style="color: white;">• Sampedro Stalyn</h1>
-<h1 style="color: white;">•Agualsaca Elvis</h1>
-
 
 <script>
 
